@@ -1,0 +1,8 @@
+- id: check-version-equality
+  name: check version equality
+  description: checks whether the versions specified in pyproject.toml and project/__init__.py are equal.
+  files: "^pyproject.toml|.+/__init__.py$"
+  pass_filenames: false
+  entry: check-version-equality
+  language: python
+  types: [python]
