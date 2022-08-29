@@ -7,7 +7,7 @@ from typing import Optional, Sequence, Union
 
 import toml
 
-__version__ = "0.0.1"
+__version__ = "0.0.2"
 
 
 def fetch_dunder_version(source_code: str) -> Optional[str]:
