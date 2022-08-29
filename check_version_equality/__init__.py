@@ -3,7 +3,7 @@ Checks whether the versions specified in pyproject.toml and project/__init__.py 
 """
 import ast
 import os
-from typing import Optional, Sequence
+from typing import Optional, Sequence, Union
 
 import toml
 
@@ -25,7 +25,7 @@ def fetch_dunder_version(source_code: str) -> Optional[str]:
     return None
 
 
-def main(argv: Sequence[str] | None = None) -> int:
+def main(argv: Union[Sequence[str], None] = None) -> int:
     del argv
     if not os.path.exists("pyproject.toml"):
         print("pyproject.toml not found.")
