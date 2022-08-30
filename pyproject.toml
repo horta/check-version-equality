@@ -8,7 +8,7 @@ authors = [{ name = "Danilo Horta", email = "danilo.horta@pm.me" }]
 readme = "README.md"
 classifiers = ["License :: OSI Approved :: MIT License"]
 requires-python = ">=3.7"
-version = "0.0.3"
+version = "0.0.4"
 description = "Ensures versions specified via `pyproject.toml` and `project/__init__.py` are identical."
 dependencies = ["toml >=0.10.2", "addict >=2.4.0"]
 
