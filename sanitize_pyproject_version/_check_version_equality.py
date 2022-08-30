@@ -10,6 +10,8 @@ from sanitize_pyproject_version._module import Module
 from sanitize_pyproject_version._pyproject import Pyproject, new_pyproject
 from sanitize_pyproject_version._version_pep440 import Version
 
+__all__ = ["check_version_equality"]
+
 
 def update_versions_pyproject(versions: Dict[str, Version], pyproject: Pyproject):
     if pyproject.has_static_version():
@@ -41,7 +43,7 @@ def update_versions_tag(versions: Dict[str, Version], vtags: list[str]):
         versions["tag"] = Version(True, vtags[0])
 
 
-def main(argv: Sequence[str] | None = None) -> int:
+def check_version_equality(argv: Sequence[str] | None = None) -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "project_dir",
@@ -87,4 +89,4 @@ def main(argv: Sequence[str] | None = None) -> int:
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    raise SystemExit(check_version_equality())

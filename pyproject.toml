@@ -13,4 +13,4 @@ description = "Ensures versions specified via `pyproject.toml` and `project/__in
 dependencies = ["toml >=0.10.2", "addict >=2.4.0"]
 
 [project.scripts]
-sanitize-pyproject-version = "sanitize_pyproject_version:main"
+check-version-equality = "sanitize_pyproject_version:check_version_equality"
