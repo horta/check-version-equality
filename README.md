@@ -1,3 +1,3 @@
-# check-version-equality
+# sanitize-pyproject-version
 
-Checks whether the versions specified in pyproject.toml and project/__init__.py are equal.
+Ensures versions specified via `pyproject.toml` and `project/__init__.py` are identical.

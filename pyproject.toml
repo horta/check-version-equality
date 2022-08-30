@@ -3,19 +3,14 @@ requires = ["flit_core >=3.2,<4"]
 build-backend = "flit_core.buildapi"
 
 [project]
-name = "check_version_equality"
-authors = [
-    {name = "Danilo Horta", email = "danilo.horta@pm.me"},
-]
+name = "sanitize_pyproject_version"
+authors = [{ name = "Danilo Horta", email = "danilo.horta@pm.me" }]
 readme = "README.md"
-classifiers = [
-    "License :: OSI Approved :: MIT License",
-]
-requires-python = ">=3.8"
-dynamic = ["version", "description"]
-dependencies = [
-    "toml >=0.10.2",
-]
+classifiers = ["License :: OSI Approved :: MIT License"]
+requires-python = ">=3.7"
+version = "0.0.3"
+description = "Ensures versions specified via `pyproject.toml` and `project/__init__.py` are identical."
+dependencies = ["toml >=0.10.2", "addict >=2.4.0"]
 
 [project.scripts]
-check-version-equality = "check_version_equality:main"
+sanitize-pyproject-version = "sanitize_pyproject_version:main"

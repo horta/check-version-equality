@@ -1,5 +1,5 @@
 repos:
-  - repo: https://github.com/horta/check-version-equality
-    rev: v0.0.1
+  - repo: https://github.com/horta/sanitize-pyproject-version
+    rev: v0.0.2
     hooks:
-      - id: check-version-equality
+      - id: sanitize-pyproject-version
